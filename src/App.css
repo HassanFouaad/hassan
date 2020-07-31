@@ -24,20 +24,23 @@ body {
   color: #d5674e !important;
   font-size: 20px;
   font-weight: bolder;
+  
 }
 .nav-link {
-  color: white !important;
   font-size: 20px;
   font-weight: 700;
   margin-left: 50px;
+  font-family: "Josefin Sans";
 }
 .nav-link:hover {
   color: #d5674e !important;
 }
 #hello {
   margin-top: 150px;
+  font-family: "Josefin Sans";
 }
-#hello:hover{
+
+#hello:hover {
   color: #d5674e;
 }
 #education {
@@ -51,7 +54,6 @@ body {
 }
 #what2 {
   color: #656e78;
-  font-weight: 700;
   font-size: 30px;
 }
 #KFS {
@@ -59,22 +61,28 @@ body {
   font-size: 30px;
   text-transform: uppercase;
   background-color: #d5674e;
+  font-family: "Josefin Sans";
+
   margin: 4px;
   padding: 7px;
+  border-radius: 15px;
 }
 #eng {
   color: #212845;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family: "Shadows Into Light";
 }
 #slide {
   background-color: #f3f3f3;
+  margin-bottom: 100px;
 }
 #front {
   color: #d5674e !important ;
   font-size: 50px;
   font-weight: 600;
+  font-family: "Josefin Sans";
 }
 #certificate {
   height: 350px;
@@ -87,25 +95,35 @@ body {
   text-decoration: none;
 }
 #friends {
-  color: white;
-  font-size: 40px;
+  color: #d5674e;
+  font-size: 20px;
 
   font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
   margin-top: 20px;
-  background-color: #d5674e;
+
+  border-radius: 15px;
 }
 #sayhello {
-  font-size: 20px;
+  font-size: 10px;
   padding: 30px;
 }
-
+#hehe {
+  font-size: 30px;
+}
 #touch {
-  
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 2px #cfcece;
   margin-bottom: 20px;
+
   padding-bottom: 5px;
+}
+
+#touch2 {
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 2px #cfcece;
+  padding-bottom: 10px;
 }
 @media screen and (max-width: 700px) {
   #front {
@@ -149,6 +167,12 @@ body {
 @media (max-width: 991px) {
   .navbar-nav {
     position: absolute;
-    right: 6%;
+    right: 51%;
+    background-color: white;
+    padding: 5px;
+    padding-right: 30px;
+  }
+  .nav-link {
+    color: #d5674e !important;
   }
 }

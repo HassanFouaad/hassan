@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Jumbotron, Container } from "reactstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -41,7 +41,12 @@ class Home extends Component {
           </Container>
         </Jumbotron>
         <Container>
-          <div className="row" align="center">
+          <div
+            className="row mb-5 mt-5"
+            align="center"
+            id="touch"
+            data-aos="fade-up"
+          >
             <div className="col-sm " id="education">
               <h1
                 id="what"
@@ -58,17 +63,16 @@ class Home extends Component {
                   data-aos="zoom-in-down"
                   data-aos-anchor-placement="top-bottom"
                 >
-                  <p>
+                  <p id="me">
                     I'm MERN-Stack Developer ALWAYS seeking for extending my
-                    development knowledge, I code in React Javascript based
-                    library, Support that by Node JS based Back-End runtime,
+                    development knowledge, I code in ReactJS Javascript based
+                    library, Support that by NodeJS based Back-End runtime,
                     Build API REST by Express JS Then Back it up by MONGODB
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <hr></hr>
         </Container>
         <Container>
           <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
@@ -81,7 +85,6 @@ class Home extends Component {
             data-aos="zoom-in-down"
             data-aos-anchor-placement="top-bottom"
           ></div>
-          <hr></hr>
         </Container>
 
         <Container>

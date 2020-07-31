@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-/* import { Link } from "react-router-dom"; */
 import {
   Nav,
   NavItem,
   NavLink,
-  NavbarBrand,
   NavbarToggler,
   Collapse,
   Navbar,
@@ -15,9 +13,11 @@ export default class Header extends Component {
     this.state = {
       navOpen: false,
       isHovering: false,
+      status: "top",
     };
     this.handleMouseHover = this.handleMouseHover.bind(this);
     this.toggleNav = this.toggleNav.bind(this);
+    this.listener = null;
   }
   toggleNav() {
     this.setState({ navOpen: !this.state.navOpen });
@@ -30,39 +30,73 @@ export default class Header extends Component {
       isHovering: !state.isHovering,
     };
   }
+  componentDidMount() {
+    this.listener = document.addEventListener("scroll", (e) => {
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 700) {
+        if (this.state.status !== "colored") {
+          this.setState({ status: "colored" });
+        }
+      } else {
+        if (this.state.status !== "top") {
+          this.setState({ status: "top" });
+        }
+      }
+    });
+  }
 
   render() {
+    const outStyle = {
+      color: this.state.status === "top" ? "white" : "#d5674e",
+      display: this.state.status === "top" ? "" : "none",
+    };
+    const outStyle2 = {};
     return (
       <React.Fragment>
         <Navbar light expand="md" className="Navbar mt-0 fixed-top">
           <div className="container">
-            <NavbarBrand name className="mr-auto"></NavbarBrand>
             <NavbarToggler expand="sm" onClick={this.toggleNav}>
               <i className="fa fa-bars" style={{ color: "#d5674e" }}></i>
             </NavbarToggler>
-            <Collapse isOpen={this.state.cvOpen} cv>
-              <div cv> HEEEEEEEEEEEEEEY</div>
-            </Collapse>
 
             <Collapse isOpen={this.state.navOpen} navbar>
               <Nav navbar className="ml-auto">
                 <NavItem>
-                  <NavLink href="/" id="hehe">
+                  <NavLink href="/" id="hehe" style={outStyle}>
                     Home
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about" id="hehe">
-                    AboutMe
+                  <NavLink href="/about" id="hehe" style={outStyle}>
+                    About Me
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    style={outStyle}
+                    target="_blank"
+                    href="http://www.github.com/hassanfouaad"
+                  >
+                    <i className="fa fa-github fa-2x"></i>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    style={outStyle}
+                    target="_blank"
+                    href="https://www.linkedin.com/in/hassan-fouad-76a417159/"
+                  >
+                    <i className="fa fa-linkedin fa-2x"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem onMouseOver={this.toggleCv}>
                   <NavLink
+                    style={outStyle}
                     to="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
                     onMouseEnter={this.handleMouseHover}
                     onMouseLeave={this.handleMouseHover}
                   >
-                    <span className="fa fa-file-pdf-o fa-1x"></span>
+                    <span className="fa fa-file-pdf-o fa-2x"></span>
 
                     {this.state.isHovering && (
                       <a
