@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f3f3f3;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-light .navbar-toggler-icon {
+  color: #d5674e !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
 }
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+.jumbotron {
+  background-image: url(./images/lab.png);
+  background-size: cover;
 
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.navbar-brand {
+  color: #d5674e !important;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.nav-link {
+  color: #d5674e !important;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+.nav-link:hover {
+  color: #e28a76 !important;
+}
+#hello {
+  margin-top: 150px;
+}
+#education {
+  background-color: white;
+}
+
+#what {
+  color: #d5674e !important ;
+  font-weight: 700;
+  font-size: 50px;
+}
+#what2 {
+  color: #656e78;
+  font-weight: 700;
+  font-size: 30px;
+}
+#KFS {
   color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #d5674e;
+  margin: 4px;
+  padding: 7px;
 }
-
-.App-link {
-  color: #61dafb;
+#eng {
+  color: #212845;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#slide {
+  background-color: #f3f3f3;
+}
+#front {
+  color: #d5674e !important ;
+  font-size: 50px;
+  font-weight: 600;
+}
+#certificate {
+  height: 550px;
+}
+#verify {
+  margin-top: 220px;
+}
+#verify2 {
+  color: white;
+  text-decoration: none;
+}
+#butt {
+}
+@media screen and (max-width: 700px) {
+  #front {
+    font-size: 25px;
+    font-weight: bold;
   }
-  to {
-    transform: rotate(360deg);
+  #what {
+    font-size: 40px;
+  }
+  #what2 {
+    font-size: 20px;
+  }
+  #eng {
+    font-size: 20px;
+    letter-spacing: 0em;
+  }
+  #KFS {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: #d5674e;
+    margin: 1px;
+    padding: 1px;
+  }
+  #hello {
+    margin-top: 200px;
+    font-size: 30px;
+  }
+  #certificate {
+    max-height: 170px;
+  }
+  #verify {
+    margin-top: 70px;
+    font-size: 30px;
+    color: #d5674e;
+    text-decoration: none;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    position: absolute;
+    right: 6%;
   }
 }
