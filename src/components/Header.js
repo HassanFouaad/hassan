@@ -66,7 +66,7 @@ export default class Header extends Component {
 
                     {this.state.isHovering && (
                       <a
-                        style={{ color: "white" }}
+                        style={{ color: "#d5674e", textDecoration: "none" }}
                         target="_blank"
                         href="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
                       >

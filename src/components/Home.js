@@ -1,13 +1,17 @@
 import React, { Component, Fragment } from "react";
-import { Jumbotron, Row, Container } from "reactstrap";
+import { Jumbotron, Container } from "reactstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Header from "./Header";
+
 import ReactTypingEffect from "react-typing-effect";
 import Carousel from "./Slider/Carousel";
-import Certificates from "./Slider/Certificates";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Touch from "./Touch";
 class Home extends Component {
+  constructor(props) {
+    super(props);
+  }
   componentDidMount() {
     AOS.init({
       duration: 600,
@@ -23,7 +27,7 @@ class Home extends Component {
             <h1 id="hello">
               <ReactTypingEffect
                 text={[
-                  "Hello I'm Hassan 👋",
+                  "Hello I'm Hassan",
                   "FullStack Developer",
                   "Graphic Designer",
                   "Glad to see you here",
@@ -64,6 +68,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
+          <hr></hr>
         </Container>
         <Container>
           <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
@@ -71,14 +76,22 @@ class Home extends Component {
           </div>
         </Container>
         <Container className="mb-5">
-          <Certificates className="mb-5"></Certificates>
+          <div
+            className="mb-5"
+            data-aos="zoom-in-down"
+            data-aos-anchor-placement="top-bottom"
+          ></div>
+          <hr></hr>
+        </Container>
+
+        <Container>
+          <div data-aos="fade-left">
+            <Touch></Touch>
+          </div>
         </Container>
       </div>
     );
   }
 }
 
-function Head() {
-  return <div></div>;
-}
 export default Home;

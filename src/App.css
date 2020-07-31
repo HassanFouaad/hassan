@@ -26,16 +26,19 @@ body {
   font-weight: bolder;
 }
 .nav-link {
-  color: #d5674e !important;
+  color: white !important;
   font-size: 20px;
   font-weight: 700;
   margin-left: 50px;
 }
 .nav-link:hover {
-  color: #e28a76 !important;
+  color: #d5674e !important;
 }
 #hello {
   margin-top: 150px;
+}
+#hello:hover{
+  color: #d5674e;
 }
 #education {
   background-color: white;
@@ -74,7 +77,7 @@ body {
   font-weight: 600;
 }
 #certificate {
-  height: 550px;
+  height: 350px;
 }
 #verify {
   margin-top: 220px;
@@ -83,7 +86,26 @@ body {
   color: white;
   text-decoration: none;
 }
-#butt {
+#friends {
+  color: white;
+  font-size: 40px;
+
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #d5674e;
+}
+#sayhello {
+  font-size: 20px;
+  padding: 30px;
+}
+
+#touch {
+  
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 @media screen and (max-width: 700px) {
   #front {

@@ -2,21 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { Container } from "reactstrap";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        fontSize: "30px",
-        background: "#212845",
-        display: "block",
-      }}
-      onClick={onClick}
-    />
-  );
-}
 export default class Carousel extends Component {
   render() {
     const settings = {
