@@ -5,8 +5,7 @@ import "react-awesome-button/dist/styles.css";
 export default class Touch extends Component {
   render() {
     return (
-      <div className="row">
-        <div className=" col-sm-3 ml-auto">
+
           <div id="touch2">
             <Fragment>
               <div className="row justify-content-center">
@@ -24,7 +23,7 @@ export default class Touch extends Component {
                     href="https://www.linkedin.com/in/hassan-fouad-76a417159/"
                   >
                     <span
-                      className="fa fa-linkedin fa-lg"
+                      className="fab fa-linkedin-in fa-lg"
                       style={{ color: "white" }}
                     ></span>
                   </a>{" "}
@@ -34,7 +33,7 @@ export default class Touch extends Component {
                     href="http://www.github.com/hassanfouaad"
                   >
                     <span
-                      className="fa fa-github fa-lg"
+                      className="fab fa-github fa-lg"
                       style={{ color: "white" }}
                     ></span>
                   </a>
@@ -49,8 +48,7 @@ export default class Touch extends Component {
               </div>
             </Fragment>
           </div>
-        </div>
-      </div>
+
     );
   }
 }

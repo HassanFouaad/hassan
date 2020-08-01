@@ -21,7 +21,7 @@ export default class Carousel extends Component {
                 <i
                   style={{ color: "#212845" }}
                   id="myi"
-                  className="fa fa-server fa-5x"
+                  className="fas fa-server fa-5x"
                 ></i>
               </div>
               <span id="front">Back-End Developement</span>
@@ -53,7 +53,7 @@ export default class Carousel extends Component {
                 <i
                   style={{ color: "#212845" }}
                   id="myi"
-                  className="fa fa-file-code-o fa-5x"
+                  className="fas fa-file-code fa-5x"
                 ></i>
               </div>
               <span id="front">Front-End Developement</span>
@@ -89,7 +89,7 @@ export default class Carousel extends Component {
                 <i
                   style={{ color: "#212845" }}
                   id="myi"
-                  className="fa fa-paint-brush fa-5x"
+                  className="fas fa-paint-brush fa-5x"
                 ></i>
               </div>
               <span id="front">Graphic Design</span>

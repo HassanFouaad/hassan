@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron, Container } from "reactstrap";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
 import ReactTypingEffect from "react-typing-effect";
 import Carousel from "./Slider/Carousel";
 
@@ -14,7 +13,7 @@ class Home extends Component {
   }
   componentDidMount() {
     AOS.init({
-      duration: 600,
+      duration: 700,
       easing: "ease-in-out-back",
     });
   }
@@ -88,8 +87,21 @@ class Home extends Component {
         </Container>
 
         <Container>
-          <div data-aos="fade-left">
-            <Touch></Touch>
+          <div>
+            <div className="row">
+              <div
+                className="col-sm-3 text-center mt-5"
+                id="morerow"
+                data-aos="fade-right"
+              >
+                <a href="/about" id="viewmore">
+                  About Me
+                </a>
+              </div>
+              <div className=" col-sm-3 ml-auto" data-aos="fade-left">
+                <Touch></Touch>
+              </div>
+            </div>
           </div>
         </Container>
       </div>

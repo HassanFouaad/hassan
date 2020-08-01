@@ -8,6 +8,42 @@ body {
   margin: 0px auto;
   padding: 0px auto;
 }
+#listaya {
+  list-style: none;
+  margin-left: 10px;
+}
+#listaya span {
+  margin-left: 10px;
+  text-decoration: none;
+  box-shadow: 2px 1px 2px #cfcece;
+}
+#sub {
+  box-shadow: 2px 1px 2px #cfcece;
+}
+#listaya span:hover {
+  color: #d5674e;
+}
+#listaya a {
+  text-decoration: none;
+  color: black;
+}
+#listaya a:hover {
+  color: #d5674e;
+}
+
+#adi {
+  min-width: 50px;
+}
+#listaya li {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: "Josefin Sans";
+}
+#mey {
+  box-shadow: 5px 5px 2px #cfcece;
+  border-radius: 20px;
+}
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
@@ -20,11 +56,11 @@ body {
 
   min-height: 100vh;
 }
+
 .navbar-brand {
   color: #d5674e !important;
   font-size: 20px;
   font-weight: bolder;
-  
 }
 .nav-link {
   font-size: 20px;
@@ -33,7 +69,7 @@ body {
   font-family: "Josefin Sans";
 }
 .nav-link:hover {
-  color: #d5674e !important;
+  color: #e08b78 !important;
 }
 #hello {
   margin-top: 150px;
@@ -85,7 +121,7 @@ body {
   font-family: "Josefin Sans";
 }
 #certificate {
-  height: 350px;
+  height: 300px;
 }
 #verify {
   margin-top: 220px;
@@ -118,7 +154,15 @@ body {
 
   padding-bottom: 5px;
 }
-
+#viewmore {
+  background-color: #d5674e;
+  border-top-right-radius: 30px;
+  font-family: "Josefin Sans";
+  color: white;
+  font-weight: 900;
+  padding: 20px;
+  text-decoration: none;
+}
 #touch2 {
   background-color: white;
   margin-bottom: 20px;
@@ -161,6 +205,9 @@ body {
     color: #d5674e;
     text-decoration: none;
     padding: 2px;
+  }
+  #morerow {
+    margin-top: 150px;
   }
 }
 

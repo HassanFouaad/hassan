@@ -47,16 +47,21 @@ export default class Header extends Component {
 
   render() {
     const outStyle = {
-      color: this.state.status === "top" ? "white" : "#d5674e",
-      display: this.state.status === "top" ? "" : "none",
+      color: this.state.status === "top" ? "#d5674e" : "#d5674e",
+      backgroundColor: this.state.status === "top" ? "" : "white",
     };
     const outStyle2 = {};
     return (
       <React.Fragment>
-        <Navbar light expand="md" className="Navbar mt-0 fixed-top">
+        <Navbar
+          light
+          expand="md"
+          className="Navbar mt-0 fixed-top"
+          style={outStyle}
+        >
           <div className="container">
             <NavbarToggler expand="sm" onClick={this.toggleNav}>
-              <i className="fa fa-bars" style={{ color: "#d5674e" }}></i>
+              <i className="fas fa-bars" style={{ color: "#d5674e" }}></i>
             </NavbarToggler>
 
             <Collapse isOpen={this.state.navOpen} navbar>
@@ -77,7 +82,7 @@ export default class Header extends Component {
                     target="_blank"
                     href="http://www.github.com/hassanfouaad"
                   >
-                    <i className="fa fa-github fa-2x"></i>
+                    <i className="fab fa-github fa-2x"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -86,7 +91,7 @@ export default class Header extends Component {
                     target="_blank"
                     href="https://www.linkedin.com/in/hassan-fouad-76a417159/"
                   >
-                    <i className="fa fa-linkedin fa-2x"></i>
+                    <i className="fab fa-linkedin-in fa-2x"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem onMouseOver={this.toggleCv}>
@@ -96,7 +101,7 @@ export default class Header extends Component {
                     onMouseEnter={this.handleMouseHover}
                     onMouseLeave={this.handleMouseHover}
                   >
-                    <span className="fa fa-file-pdf-o fa-2x"></span>
+                    <span className="fas fa-file-pdf fa-2x"></span>
 
                     {this.state.isHovering && (
                       <a
@@ -104,7 +109,7 @@ export default class Header extends Component {
                         target="_blank"
                         href="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
                       >
-                        {"  "}View My Resume
+                       &nbsp; VIEW MY RESUME
                       </a>
                     )}
                   </NavLink>
