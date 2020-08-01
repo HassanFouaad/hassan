@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Button, Link } from "react-floating-action-button";
-import { lightColors, darkColors } from "react-floating-action-button";
+import { lightColors } from "react-floating-action-button";
 
 export default class Contact extends Component {
   render() {
@@ -8,33 +8,27 @@ export default class Contact extends Component {
       <div>
         <Container>
           <Link
+            icon="fas fa-phone fa-2x"
             rotate={true}
             styles={{
               backgroundColor: "#d5674e",
               color: lightColors.white,
             }}
-          >
-            <a
-              className="fa fa-phone fa-x"
-              href="tel:+201202021670"
-              style={{ color: "white", textDecoration: "none" }}
-            ></a>
-          </Link>
+            href="tel:+1202021670"
+          ></Link>
+
           <Link
+            href="mailto:mrhassanfouad1@gmail.com"
+            icon="fas fa-envelope fa-2x"
             rotate={true}
             styles={{
               backgroundColor: "#d5674e",
               color: lightColors.white,
             }}
-          >
-            <a
-              className="fa fa-envelope fa-1x"
-              href="mailto:mrhassanfouad1@gmail.com"
-              style={{ color: "white", textDecoration: "none" }}
-            ></a>
-          </Link>
+          ></Link>
+
           <Button
-            icon="fa fa-address-book fa-2x"
+            icon="fas fa-address-book fa-2x"
             rotate={true}
             styles={{
               backgroundColor: "#d5674e",

@@ -7,12 +7,13 @@ import Carousel from "./Slider/Carousel";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Touch from "./Touch";
+import { Link } from "react-router-dom";
 class Home extends Component {
   constructor(props) {
     super(props);
   }
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
     AOS.init({
       duration: 700,
       easing: "ease-in-out-back",
@@ -94,10 +95,8 @@ class Home extends Component {
                 className="col-sm-3 text-center mt-5"
                 id="morerow"
                 data-aos="fade-right"
-              >
-                <a href="/about" id="viewmore">
-                  About Me
-                </a>
+              > 
+              <Link to="/about" id="viewmore">About Me</Link>
               </div>
               <div className=" col-sm-3 ml-auto" data-aos="fade-left">
                 <Touch></Touch>

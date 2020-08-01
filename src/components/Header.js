@@ -7,6 +7,8 @@ import {
   Collapse,
   Navbar,
 } from "reactstrap";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 export default class Header extends Component {
   constructor(props) {
@@ -32,6 +34,10 @@ export default class Header extends Component {
     };
   }
   componentDidMount() {
+    AOS.init({
+      duration: 700,
+      easing: "ease-in-out-back",
+    });
     this.listener = document.addEventListener("scroll", (e) => {
       let scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 700) {
@@ -69,20 +75,27 @@ export default class Header extends Component {
               <Nav navbar className="ml-auto">
                 <NavItem>
                   <Link to="/" style={{ textDecoration: "none" }}>
-                    <NavLink id="hehe" style={outStyle}>
+                    <NavLink id="hehe" style={outStyle} data-aos="fade-left">
                       Home
                     </NavLink>
                   </Link>
                 </NavItem>
                 <NavItem>
                   <Link to="/about" style={{ textDecoration: "none" }}>
-                    <NavLink id="hehe" style={outStyle}>
+                    <NavLink
+                      id="hehe"
+                      style={outStyle}
+                      data-aos="fade-left"
+                      data-aos-delay="250"
+                    >
                       About Me
                     </NavLink>
                   </Link>
                 </NavItem>
                 <NavItem>
                   <NavLink
+                    data-aos="fade-left"
+                    data-aos-delay="500"
                     style={outStyle}
                     target="_blank"
                     href="http://www.github.com/hassanfouaad"
@@ -92,6 +105,8 @@ export default class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
+                    data-aos="fade-left"
+                    data-aos-delay="750"
                     style={outStyle}
                     target="_blank"
                     href="https://www.linkedin.com/in/hassan-fouad-76a417159/"
@@ -101,6 +116,8 @@ export default class Header extends Component {
                 </NavItem>
                 <NavItem onMouseOver={this.toggleCv}>
                   <NavLink
+                    data-aos="fade-left"
+                    data-aos-delay="1000"
                     style={outStyle}
                     to="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
                     onMouseEnter={this.handleMouseHover}

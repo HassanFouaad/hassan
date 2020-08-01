@@ -3,12 +3,13 @@ import { Media, MediaProps, Jumbotron, Container } from "reactstrap";
 import Me from "../images/me.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Fade, Stagger } from "react-animation-components";
 import Certificates from "./Slider/Certificates";
 import Black from "../images/blackcat.png";
 import Header from "./Header";
 export default class About extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
     AOS.init({
       duration: 600,
       easing: "ease-in-out-back",
@@ -86,23 +87,26 @@ export default class About extends Component {
           <Certificates></Certificates>
         </Container>
         <Container>
-          <div className="text-center" id="eng">
+          <div className="text-center" id="eng" data-aos="fade-up">
             Personal Apps
           </div>
           <div className=" row mt-5">
-            <div className="col-sm-4">
+            <div className="col-sm-4" data-aos="fade-right">
               <img src={Black} alt="Mewoers" className="img-fluid"></img>
             </div>
             <div className="col-sm-8">
-              <div className="text-left ml-5" id="meow1">
+              <div className="text-left ml-5" id="meow1" data-aos="fade-left">
                 <span>MEOWERS - Social Network App</span>
               </div>
-              <div className="text-left ml-5" id="meow2">
-                <a target="_blank" href="https://github.com/HassanFouaad/meowers">
+              <div className="text-left ml-5" id="meow2" data-aos="fade-right">
+                <a
+                  target="_blank"
+                  href="https://github.com/HassanFouaad/meowers"
+                >
                   <span>Git Repo</span>
                 </a>
               </div>
-              <div className="text-left ml-5" id="meow3">
+              <div className="text-left ml-5" id="meow3" data-aos="fade-up">
                 <span>
                   <p>
                     Meowers is a social network MERN Stack Application that
