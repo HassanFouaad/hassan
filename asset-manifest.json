@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hassan/static/css/main.275d19a6.chunk.css",
-    "main.js": "/hassan/static/js/main.d8aaeef8.chunk.js",
-    "main.js.map": "/hassan/static/js/main.d8aaeef8.chunk.js.map",
+    "main.js": "/hassan/static/js/main.3c08df93.chunk.js",
+    "main.js.map": "/hassan/static/js/main.3c08df93.chunk.js.map",
     "runtime-main.js": "/hassan/static/js/runtime-main.3b75d021.js",
     "runtime-main.js.map": "/hassan/static/js/runtime-main.3b75d021.js.map",
     "static/css/2.6c90e524.chunk.css": "/hassan/static/css/2.6c90e524.chunk.css",
     "static/js/2.bdfee8d1.chunk.js": "/hassan/static/js/2.bdfee8d1.chunk.js",
     "static/js/2.bdfee8d1.chunk.js.map": "/hassan/static/js/2.bdfee8d1.chunk.js.map",
     "index.html": "/hassan/index.html",
-    "precache-manifest.7472fe9e831bd1e2506a1eb73243ec66.js": "/hassan/precache-manifest.7472fe9e831bd1e2506a1eb73243ec66.js",
+    "precache-manifest.676760229373c26e71590011e4e4bd1b.js": "/hassan/precache-manifest.676760229373c26e71590011e4e4bd1b.js",
     "service-worker.js": "/hassan/service-worker.js",
     "static/css/2.6c90e524.chunk.css.map": "/hassan/static/css/2.6c90e524.chunk.css.map",
     "static/css/main.275d19a6.chunk.css.map": "/hassan/static/css/main.275d19a6.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.6c90e524.chunk.css",
     "static/js/2.bdfee8d1.chunk.js",
     "static/css/main.275d19a6.chunk.css",
-    "static/js/main.d8aaeef8.chunk.js"
+    "static/js/main.3c08df93.chunk.js"
   ]
 }
