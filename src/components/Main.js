@@ -13,9 +13,8 @@ export default class Main extends Component {
       <div className="App">
         <Header></Header>
         <Switch location={this.props.location}>
-          <Route exact path={["/home", "/"]} component={Home}></Route>
-          <Route exact path="/about" component={About}></Route>
-          <Redirect to="/home"></Redirect>
+          <Route exact path="/" render={() => <Home />}></Route>
+          <Route path="/about" component={About}></Route>
         </Switch>
         <Contact></Contact>
       </div>

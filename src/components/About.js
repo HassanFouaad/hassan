@@ -8,6 +8,7 @@ import Black from "../images/blackcat.png";
 import Header from "./Header";
 export default class About extends Component {
   componentDidMount() {
+    window.scrollTo(0, 0)
     AOS.init({
       duration: 600,
       easing: "ease-in-out-back",

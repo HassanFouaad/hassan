@@ -12,6 +12,7 @@ class Home extends Component {
     super(props);
   }
   componentDidMount() {
+    window.scrollTo(0, 0)
     AOS.init({
       duration: 700,
       easing: "ease-in-out-back",

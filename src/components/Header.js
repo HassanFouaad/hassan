@@ -7,6 +7,7 @@ import {
   Collapse,
   Navbar,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 export default class Header extends Component {
   constructor(props) {
     super(props);
@@ -67,14 +68,18 @@ export default class Header extends Component {
             <Collapse isOpen={this.state.navOpen} navbar>
               <Nav navbar className="ml-auto">
                 <NavItem>
-                  <NavLink href="/" id="hehe" style={outStyle}>
-                    Home
-                  </NavLink>
+                  <Link to="/" style={{ textDecoration: "none" }}>
+                    <NavLink id="hehe" style={outStyle}>
+                      Home
+                    </NavLink>
+                  </Link>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about" id="hehe" style={outStyle}>
-                    About Me
-                  </NavLink>
+                  <Link to="/about" style={{ textDecoration: "none" }}>
+                    <NavLink id="hehe" style={outStyle}>
+                      About Me
+                    </NavLink>
+                  </Link>
                 </NavItem>
                 <NavItem>
                   <NavLink
@@ -109,7 +114,7 @@ export default class Header extends Component {
                         target="_blank"
                         href="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
                       >
-                       &nbsp; VIEW MY RESUME
+                        &nbsp; VIEW MY RESUME
                       </a>
                     )}
                   </NavLink>
