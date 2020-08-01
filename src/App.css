@@ -169,6 +169,22 @@ body {
   box-shadow: 5px 5px 2px #cfcece;
   padding-bottom: 10px;
 }
+#meow1{
+  font-size: 30px;
+}
+#meow2 a {
+  color: #d5674e;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Josefin Sans";
+}
+#meow3 li {
+  list-style: square;
+}
+#meow3 p {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+}
 @media screen and (max-width: 700px) {
   #front {
     font-size: 25px;

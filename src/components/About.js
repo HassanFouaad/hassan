@@ -4,6 +4,8 @@ import Me from "../images/me.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificates from "./Slider/Certificates";
+import Black from "../images/blackcat.png";
+import Header from "./Header";
 export default class About extends Component {
   componentDidMount() {
     AOS.init({
@@ -14,8 +16,7 @@ export default class About extends Component {
   render() {
     return (
       <div id="aboutjumpo">
-
-        <Container id="sub" style={{marginTop:"120px"}}>
+        <Container id="sub" style={{ marginTop: "150px" }}>
           <div className="text-center" id="eng" data-aos="fade-left">
             Contact
           </div>
@@ -67,7 +68,11 @@ export default class About extends Component {
           </div>
           <div className="text-left" id="listaya">
             <li>
-              <a className="text-center" target="_blank" href="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing">
+              <a
+                className="text-center"
+                target="_blank"
+                href="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
+              >
                 View Full Resume
               </a>
             </li>
@@ -78,6 +83,50 @@ export default class About extends Component {
             Certificates
           </div>
           <Certificates></Certificates>
+        </Container>
+        <Container>
+          <div className="text-center" id="eng">
+            Personal Apps
+          </div>
+          <div className=" row mt-5">
+            <div className="col-sm-4">
+              <img src={Black} alt="Mewoers" className="img-fluid"></img>
+            </div>
+            <div className="col-sm-8">
+              <div className="text-left ml-5" id="meow1">
+                <span>MEOWERS - Social Network App</span>
+              </div>
+              <div className="text-left ml-5" id="meow2">
+                <a target="_blank" href="https://github.com/HassanFouaad/meowers">
+                  <span>Git Repo</span>
+                </a>
+              </div>
+              <div className="text-left ml-5" id="meow3">
+                <span>
+                  <p>
+                    Meowers is a social network MERN Stack Application that
+                    includes
+                  </p>
+                  <ul>
+                    <li>
+                      Full Athentication "Signup - Signin - Logout" System.
+                    </li>
+                    <li>Adding,editing and deleting posts.</li>
+                    <li>Follow-UnFollow Full Working System.</li>
+                    <li>Like - Unlike Full Working System.</li>
+                    <li>
+                      Profile Page Showing "Posts by User + Following /
+                      Followers Lists".
+                    </li>
+                    <li>
+                      Edit Account Page "Upload/Edit Profile Picture - Edit
+                      Account's Informations".
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
         </Container>
       </div>
     );
