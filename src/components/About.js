@@ -73,7 +73,7 @@ export default class About extends Component {
               <a
                 className="text-center"
                 target="_blank"
-                href="https://drive.google.com/file/d/19JJrcZ0s79ySCpsQu-KoNuUqacBysOJ-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1OOC1rAigsZRbP7iiJEdRoUpZ6R65yn9Z/view?usp=sharing"
               >
                 View Full Resume
               </a>
