@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58af25d405467cd4bf3705afb513059f",
+    "revision": "e6316239cc5692af452fc72a0e32ff60",
     "url": "/hassan/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hassan/static/css/2.6c90e524.chunk.css"
   },
   {
-    "revision": "bfd36ed426e9a2da04e0",
+    "revision": "8b9ff74318f1812d5a04",
     "url": "/hassan/static/css/main.83dfa5c6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hassan/static/js/2.5969aa40.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bfd36ed426e9a2da04e0",
-    "url": "/hassan/static/js/main.2c57827f.chunk.js"
+    "revision": "8b9ff74318f1812d5a04",
+    "url": "/hassan/static/js/main.02e31d3b.chunk.js"
   },
   {
     "revision": "00a387a321899c6bfa39",
