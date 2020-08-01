@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "309c440218111e7d0c87163f9bb7e7fd",
+    "revision": "58af25d405467cd4bf3705afb513059f",
     "url": "/hassan/index.html"
   },
   {
-    "revision": "502a13037faa6614a26c",
+    "revision": "1f4a3425c2bd43024ddb",
     "url": "/hassan/static/css/2.6c90e524.chunk.css"
   },
   {
-    "revision": "8765670ffd37fdab307b",
+    "revision": "bfd36ed426e9a2da04e0",
     "url": "/hassan/static/css/main.83dfa5c6.chunk.css"
   },
   {
-    "revision": "502a13037faa6614a26c",
-    "url": "/hassan/static/js/2.bdfee8d1.chunk.js"
+    "revision": "1f4a3425c2bd43024ddb",
+    "url": "/hassan/static/js/2.5969aa40.chunk.js"
   },
   {
     "revision": "c0a7484cc31358a0df86ce48ef08f02b",
-    "url": "/hassan/static/js/2.bdfee8d1.chunk.js.LICENSE.txt"
+    "url": "/hassan/static/js/2.5969aa40.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8765670ffd37fdab307b",
-    "url": "/hassan/static/js/main.58ac1b01.chunk.js"
+    "revision": "bfd36ed426e9a2da04e0",
+    "url": "/hassan/static/js/main.2c57827f.chunk.js"
   },
   {
     "revision": "00a387a321899c6bfa39",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "85c96d4ac2ae45f4d3f96010b24d8fe5",
     "url": "/hassan/static/media/course1.85c96d4a.jpg"
+  },
+  {
+    "revision": "510a28df30447a24fdcb07fd654d4ecc",
+    "url": "/hassan/static/media/course2.510a28df.jpg"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
