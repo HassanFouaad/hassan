@@ -22,7 +22,7 @@ class Home extends Component {
   render() {
     const wave = <div>hey</div>;
     return (
-      <div>
+      <div style={{ overflowX: "hidden" }}>
         <Jumbotron>
           <Container className="d-flex justify-content-start">
             <h1 id="hello">
@@ -95,8 +95,10 @@ class Home extends Component {
                 className="col-sm-3 text-center mt-5"
                 id="morerow"
                 data-aos="fade-right"
-              > 
-              <Link to="/about" id="viewmore">About Me</Link>
+              >
+                <Link to="/about" id="viewmore">
+                  Click for More About Me
+                </Link>
               </div>
               <div className=" col-sm-3 ml-auto" data-aos="fade-left">
                 <Touch></Touch>

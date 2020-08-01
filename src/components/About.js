@@ -16,9 +16,12 @@ export default class About extends Component {
     });
   }
   render() {
+    const customAos ={
+      overflowX: "hidden"
+    }
     return (
-      <div id="aboutjumpo">
-        <Container id="sub" style={{ marginTop: "150px" }}>
+      <div id="aboutjumpo" style={{overflowX:"hidden"}}>
+        <Container id="sub" style={{ marginTop: "150px", overflowX:"hidden"}}>
           <div className="text-center" id="eng" data-aos="fade-left">
             Contact
           </div>
@@ -103,7 +106,8 @@ export default class About extends Component {
                   target="_blank"
                   href="https://github.com/HassanFouaad/meowers"
                 >
-                  <span>Git Repo</span>
+                  <span>Git Repo</span> &nbsp; &nbsp;
+                   <span><a target="_blank" href="http://meowers.herokuapp.com/">Visit</a></span>
                 </a>
               </div>
               <div className="text-left ml-5" id="meow3" data-aos="fade-up">

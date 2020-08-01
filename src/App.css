@@ -169,7 +169,7 @@ body {
   box-shadow: 5px 5px 2px #cfcece;
   padding-bottom: 10px;
 }
-#meow1{
+#meow1 {
   font-size: 30px;
 }
 #meow2 a {
@@ -224,10 +224,11 @@ body {
   }
   #morerow {
     margin-top: 150px;
+    margin-bottom: 50px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 700px) {
   .navbar-nav {
     position: absolute;
     right: 51%;

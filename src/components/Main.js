@@ -12,7 +12,7 @@ export default class Main extends Component {
     return (
       <div className="App">
         <Header></Header>
-        <Switch location={this.props.location}>
+        <Switch >
           <Route exact path="/" render={() => <Home />}></Route>
           <Route path="/about" component={About}></Route>
         </Switch>
