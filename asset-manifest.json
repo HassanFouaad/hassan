@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.62cb764c.chunk.css",
-    "main.js": "/static/js/main.d39f96e0.chunk.js",
-    "main.js.map": "/static/js/main.d39f96e0.chunk.js.map",
+    "main.css": "/static/css/main.44a07920.chunk.css",
+    "main.js": "/static/js/main.e9202689.chunk.js",
+    "main.js.map": "/static/js/main.e9202689.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d4aa602d.js",
     "runtime-main.js.map": "/static/js/runtime-main.d4aa602d.js.map",
     "static/css/2.75dd2623.chunk.css": "/static/css/2.75dd2623.chunk.css",
-    "static/js/2.5969aa40.chunk.js": "/static/js/2.5969aa40.chunk.js",
-    "static/js/2.5969aa40.chunk.js.map": "/static/js/2.5969aa40.chunk.js.map",
+    "static/js/2.9d209c54.chunk.js": "/static/js/2.9d209c54.chunk.js",
+    "static/js/2.9d209c54.chunk.js.map": "/static/js/2.9d209c54.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.78a036ede96481436fdd8228e68ec360.js": "/precache-manifest.78a036ede96481436fdd8228e68ec360.js",
+    "precache-manifest.15eeafe415cbbbedfdd4be369749c06c.js": "/precache-manifest.15eeafe415cbbbedfdd4be369749c06c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.75dd2623.chunk.css.map": "/static/css/2.75dd2623.chunk.css.map",
-    "static/css/main.62cb764c.chunk.css.map": "/static/css/main.62cb764c.chunk.css.map",
-    "static/js/2.5969aa40.chunk.js.LICENSE.txt": "/static/js/2.5969aa40.chunk.js.LICENSE.txt",
+    "static/css/main.44a07920.chunk.css.map": "/static/css/main.44a07920.chunk.css.map",
+    "static/js/2.9d209c54.chunk.js.LICENSE.txt": "/static/js/2.9d209c54.chunk.js.LICENSE.txt",
     "static/media/blackcat.png": "/static/media/blackcat.dc695d6f.png",
     "static/media/course1.jpg": "/static/media/course1.85c96d4a.jpg",
     "static/media/course2.jpg": "/static/media/course2.510a28df.jpg",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/front.jpg": "/static/media/front.65affdf8.jpg",
     "static/media/App.css": "/static/media/lab.b5c3c087.png",
     "static/media/me.jpg": "/static/media/me.c5409773.jpg",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
@@ -25,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.d4aa602d.js",
     "static/css/2.75dd2623.chunk.css",
-    "static/js/2.5969aa40.chunk.js",
-    "static/css/main.62cb764c.chunk.css",
-    "static/js/main.d39f96e0.chunk.js"
+    "static/js/2.9d209c54.chunk.js",
+    "static/css/main.44a07920.chunk.css",
+    "static/js/main.e9202689.chunk.js"
   ]
 }
