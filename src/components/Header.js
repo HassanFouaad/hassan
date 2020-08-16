@@ -68,7 +68,8 @@ export default class Header extends Component {
         >
           <div className="container">
             <NavbarToggler expand="sm" onClick={this.toggleNav}>
-              <i className="fas fa-bars" style={{ color: "#d5674e" }}></i>
+              <i  style={{ color: "#d5674e" }}>hey</i>
+              hey
             </NavbarToggler>
 
             <Collapse isOpen={this.state.navOpen} navbar>

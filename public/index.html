@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -12,7 +11,6 @@
       href="https://fonts.googleapis.com/css?family=Shadows+Into+Light"
     />
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
     <meta name="theme-color" content="#000000" />
     <meta
@@ -49,6 +47,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      var mode = document.querySelector("#node_env_mode").value;
+      if (
+        mode === "production" &&
+        typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === "object"
+      ) {
+        window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
   </body>
 </html>
