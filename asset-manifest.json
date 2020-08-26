@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa346b46.chunk.css",
-    "main.js": "/static/js/main.a01b6f2c.chunk.js",
-    "main.js.map": "/static/js/main.a01b6f2c.chunk.js.map",
+    "main.css": "/static/css/main.35a36c83.chunk.css",
+    "main.js": "/static/js/main.4d0dba79.chunk.js",
+    "main.js.map": "/static/js/main.4d0dba79.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d4aa602d.js",
     "runtime-main.js.map": "/static/js/runtime-main.d4aa602d.js.map",
     "static/css/2.75dd2623.chunk.css": "/static/css/2.75dd2623.chunk.css",
-    "static/js/2.6fc0b91e.chunk.js": "/static/js/2.6fc0b91e.chunk.js",
-    "static/js/2.6fc0b91e.chunk.js.map": "/static/js/2.6fc0b91e.chunk.js.map",
+    "static/js/2.bb5e488c.chunk.js": "/static/js/2.bb5e488c.chunk.js",
+    "static/js/2.bb5e488c.chunk.js.map": "/static/js/2.bb5e488c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8857263d4a3e0cea45845da8194d44f4.js": "/precache-manifest.8857263d4a3e0cea45845da8194d44f4.js",
+    "precache-manifest.80e93a1579b688f4149f94e3512ad417.js": "/precache-manifest.80e93a1579b688f4149f94e3512ad417.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.75dd2623.chunk.css.map": "/static/css/2.75dd2623.chunk.css.map",
-    "static/css/main.aa346b46.chunk.css.map": "/static/css/main.aa346b46.chunk.css.map",
-    "static/js/2.6fc0b91e.chunk.js.LICENSE.txt": "/static/js/2.6fc0b91e.chunk.js.LICENSE.txt",
+    "static/css/main.35a36c83.chunk.css.map": "/static/css/main.35a36c83.chunk.css.map",
+    "static/js/2.bb5e488c.chunk.js.LICENSE.txt": "/static/js/2.bb5e488c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/allback.8dfb55d8.jpg",
     "static/media/bekam.jpg": "/static/media/bekam.62f15672.jpg",
     "static/media/bekam2.jpg": "/static/media/bekam2.b38f5c2c.jpg",
@@ -22,19 +22,18 @@
     "static/media/course2.jpg": "/static/media/course2.510a28df.jpg",
     "static/media/course3.jpg": "/static/media/course3.37735830.jpg",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/front.jpg": "/static/media/front.65affdf8.jpg",
     "static/media/ita1.jpg": "/static/media/ita1.01ce297a.jpg",
     "static/media/ita2.jpg": "/static/media/ita2.d87664c7.jpg",
     "static/media/me.jpg": "/static/media/me.c5409773.jpg",
-    "static/media/me3.png": "/static/media/me3.5363c9df.png",
+    "static/media/me3.png": "/static/media/me3.fd94d2e6.png",
     "static/media/mew2.jpg": "/static/media/mew2.22665ffc.jpg",
     "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d4aa602d.js",
     "static/css/2.75dd2623.chunk.css",
-    "static/js/2.6fc0b91e.chunk.js",
-    "static/css/main.aa346b46.chunk.css",
-    "static/js/main.a01b6f2c.chunk.js"
+    "static/js/2.bb5e488c.chunk.js",
+    "static/css/main.35a36c83.chunk.css",
+    "static/js/main.4d0dba79.chunk.js"
   ]
 }
