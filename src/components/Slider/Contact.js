@@ -10,7 +10,7 @@ export default class Contact extends Component {
           icon="fas fa-phone fa-2x"
           rotate={true}
           styles={{
-            backgroundColor: "#d5674e",
+            backgroundColor: "#f26d64",
             color: lightColors.white,
           }}
           href="tel:+1202021670"
@@ -20,7 +20,7 @@ export default class Contact extends Component {
           icon="fas fa-envelope fa-2x"
           rotate={true}
           styles={{
-            backgroundColor: "#d5674e",
+            backgroundColor: "#f26d64",
             color: lightColors.white,
           }}
         ></Link>
@@ -29,7 +29,7 @@ export default class Contact extends Component {
           icon="fas fa-address-book fa-2x"
           rotate={true}
           styles={{
-            backgroundColor: "#d5674e",
+            backgroundColor: "#f26d64",
             color: "white",
           }}
         ></Button>

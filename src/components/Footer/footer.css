@@ -1,0 +1,33 @@
+.footer {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.link-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.link-list a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.link-list a:first-of-type {
+  margin-left: 0;
+}
+
+i {
+  color: white;
+}
+
+#copyRights{
+  color:white;
+  margin-top: 30px;
+}
+#copyRights p {
+  font-size: 12px;
+}

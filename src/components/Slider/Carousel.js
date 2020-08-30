@@ -29,7 +29,8 @@ export default class Carousel extends Component {
               </div>
               <div className="row justify-content-center mt-3">
                 <div id="KFS" className="col-sm-2">
-                  <span>Node.Js</span>
+                  <span className="fab fa-node-js"></span>
+                  <span> Node.Js</span>
                 </div>
                 <div id="KFS" className="col-sm-2">
                   <span>Express.JS</span>
@@ -38,13 +39,13 @@ export default class Carousel extends Component {
                   <span>MongoDB</span>
                 </div>
                 <div id="KFS" className="col-sm-2">
-                  <span>GIT</span>
+                  <span className="fab fa-git" style={{fontSize:"50px"}}></span>
                 </div>
               </div>
             </div>
           </div>
           <div className="text-center justify-content-center" id="frontimage">
-          <div id="a7a"></div>
+            <div id="a7a"></div>
             <div id="frontcontent">
               <div>
                 <div>
@@ -59,16 +60,20 @@ export default class Carousel extends Component {
 
               <div className="row justify-content-center mt-3">
                 <div id="KFS" className="col-sm-2">
-                  <span>HTML</span>
+                  <span className="fab fa-html5"></span>
+                  <span> HTML</span>
                 </div>
                 <div id="KFS" className="col-sm-2">
-                  <span>CSS</span>
+                  <span className="fab fa-css3"></span>
+                  <span> CSS</span>
                 </div>
                 <div id="KFS" className="col-sm-2">
-                  <span>REACT JS</span>
+                  <span className="fab fa-react"></span>
+                  <span> REACT JS</span>
                 </div>
                 <div id="KFS" className="col-sm-2">
-                  <span>BOOSTRAP</span>
+                  <span className="fab fa-bootstrap"></span>
+                  <span> BOOSTRAP</span>
                 </div>
                 <div id="KFS" className="col-sm-2">
                   <span>jQUERY</span>

@@ -6,7 +6,6 @@ import Course3 from "./course3.jpg";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
-import { Container } from "reactstrap";
 export default class Certificates extends Component {
   constructor() {
     super();
@@ -15,6 +14,7 @@ export default class Certificates extends Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleClick2 = this.handleClick2.bind(this);
+    this.handleClick3 = this.handleClick3.bind(this);
   }
 
   handleClick(e) {
@@ -24,6 +24,10 @@ export default class Certificates extends Component {
   handleClick2(e) {
     e.preventDefault();
     this.setState((prevState) => ({ isFlipped2: !prevState.isFlipped2 }));
+  }
+  handleClick3(e) {
+    e.preventDefault();
+    this.setState((prevState) => ({ isFlipped3: !prevState.isFlipped3 }));
   }
   render() {
     const settings = {
@@ -40,9 +44,8 @@ export default class Certificates extends Component {
       <div id="slide">
         <div className="row mt-3 mb-5">
           <div className="col-sm mt-5">
-            <h5>
-              <h5>REACT JS - REDUX FRONT END DEVELOPMENT</h5>
-            </h5>
+            <h5 id="iconaya2">REACT JS - REDUX FRONT END DEVELOPMENT</h5>
+
             <ReactCardFlip
               isFlipped={this.state.isFlipped}
               flipDirection="vertical"
@@ -57,7 +60,8 @@ export default class Certificates extends Component {
                 <div className="col-sm text-center">
                   <button
                     onClick={this.handleClick}
-                    className="btn btn-success"
+                    className="btn"
+                    id="buttonaya"
                   >
                     Verify Here!
                   </button>
@@ -91,7 +95,7 @@ export default class Certificates extends Component {
             </ReactCardFlip>
           </div>
           <div className="col-sm mt-5">
-            <h5>MONGODB EXPRESS NODE SERVER SIDE DEVELOPMENT</h5>
+            <h5 id="iconaya2">MONGODB EXPRESS NODE SERVER SIDE DEVELOPMENT</h5>
             <ReactCardFlip
               isFlipped={this.state.isFlipped2}
               flipDirection="vertical"
@@ -106,7 +110,8 @@ export default class Certificates extends Component {
                 <div className="col-sm text-center">
                   <button
                     onClick={this.handleClick2}
-                    className="btn btn-success"
+                    className="btn"
+                    id="buttonaya"
                   >
                     Verify Here!
                   </button>
@@ -122,6 +127,7 @@ export default class Certificates extends Component {
                       size="150"
                       href="http://coursera.org/verify/F752N24L94H7"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Verify
                     </AwesomeButton>
@@ -141,9 +147,9 @@ export default class Certificates extends Component {
           </div>
 
           <div className="col-sm mt-5">
-            <h5>UI AND FRONT END FRAMEWORKS DEVELOPMENT</h5>
+            <h5 id="iconaya2">UI AND FRONT END FRAMEWORKS DEVELOPMENT</h5>
             <ReactCardFlip
-              isFlipped={this.state.isFlipped2}
+              isFlipped={this.state.isFlipped3}
               flipDirection="vertical"
               className="justify-content-center "
             >
@@ -155,8 +161,9 @@ export default class Certificates extends Component {
                 ></img>
                 <div className="col-sm text-center">
                   <button
-                    onClick={this.handleClick2}
-                    className="btn btn-success"
+                    onClick={this.handleClick3}
+                    className="btn "
+                    id="buttonaya"
                   >
                     Verify Here!
                   </button>
@@ -180,7 +187,7 @@ export default class Certificates extends Component {
                 <div className="col-sm text-center">
                   <button
                     className="btn btn-success"
-                    onClick={this.handleClick2}
+                    onClick={this.handleClick3}
                     id="butt"
                   >
                     Certificate

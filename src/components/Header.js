@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import {
   Nav,
   NavItem,
@@ -7,6 +7,7 @@ import {
   Collapse,
   Navbar,
 } from "reactstrap";
+import { Link as Linker } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -54,8 +55,8 @@ export default class Header extends Component {
 
   render() {
     const outStyle = {
-      color: this.state.status === "top" ? "#d5674e" : "#d5674e",
-      backgroundColor: this.state.status === "top" ? "" : "white",
+      color: this.state.status === "top" ? "#f26d64" : "#f26d64",
+      backgroundColor: this.state.status === "top" ? "" : "#f7fafd",
     };
     const outStyle2 = {};
     return (
@@ -68,33 +69,61 @@ export default class Header extends Component {
         >
           <div className="container">
             <NavbarToggler expand="sm" onClick={this.toggleNav}>
-              <i  style={{ color: "#d5674e" }}>hey</i>
-              hey
+              <i style={{ color: "#f26d64" }} className="fas fa-bars"></i>
             </NavbarToggler>
 
             <Collapse isOpen={this.state.navOpen} navbar>
               <Nav navbar className="ml-auto">
                 <NavItem>
-                  <Link to="/" style={{ textDecoration: "none" }}>
-                    <NavLink id="hehe" style={outStyle} data-aos="fade-left">
+                  <Linker
+                    to="homeDestination"
+                    style={{ textDecoration: "none" }}
+                    smooth={true}
+                    duration={1000}
+                  >
+                    <span
+                      id="hehe"
+                      style={outStyle}
+                      data-aos="fade-left"
+                      className="nav-link"
+                    >
                       Home
-                    </NavLink>
-                  </Link>
+                    </span>
+                  </Linker>
                 </NavItem>
                 <NavItem>
-                  <Link to="/about" style={{ textDecoration: "none" }}>
-                    <NavLink
+                  <Linker to="aboutDestination" smooth={true} duration={1000}>
+                    <span
+                      className="nav-link"
                       id="hehe"
                       style={outStyle}
                       data-aos="fade-left"
                       data-aos-delay="250"
                     >
                       About Me
-                    </NavLink>
-                  </Link>
+                    </span>
+                  </Linker>
+                </NavItem>{" "}
+                <NavItem>
+                  <Linker
+                    to="portfolioDestination"
+                    smooth={true}
+                    duration={1000}
+                  >
+                    <span
+                      className="nav-link"
+                      id="hehe"
+                      style={outStyle}
+                      data-aos="fade-up"
+                      data-aos-delay="1000"
+                    >
+                      Portfolio
+                    </span>
+                  </Linker>
                 </NavItem>
                 <NavItem>
-                  <NavLink
+                  <a
+                    className="nav-link"
                     data-aos="fade-left"
                     data-aos-delay="500"
                     style={outStyle}
@@ -102,10 +131,11 @@ export default class Header extends Component {
                     href="http://www.github.com/hassanfouaad"
                   >
                     <i className="fab fa-github fa-2x"></i>
-                  </NavLink>
+                  </a>
                 </NavItem>
                 <NavItem>
-                  <NavLink
+                  <a
+                    className="nav-link"
                     data-aos="fade-left"
                     data-aos-delay="750"
                     style={outStyle}
@@ -113,10 +143,11 @@ export default class Header extends Component {
                     href="https://www.linkedin.com/in/hassan-fouad-76a417159/"
                   >
                     <i className="fab fa-linkedin-in fa-2x"></i>
-                  </NavLink>
+                  </a>
                 </NavItem>
                 <NavItem onMouseOver={this.toggleCv}>
-                  <NavLink
+                  <a
+                    className="nav-link"
                     data-aos="fade-left"
                     data-aos-delay="1000"
                     style={outStyle}
@@ -132,10 +163,10 @@ export default class Header extends Component {
                         target="_blank"
                         href="https://drive.google.com/file/d/1OOC1rAigsZRbP7iiJEdRoUpZ6R65yn9Z/view?usp=sharing"
                       >
-                        &nbsp; VIEW MY RESUME
+                        VIEW MY RESUME
                       </a>
                     )}
-                  </NavLink>
+                  </a>
                 </NavItem>
                 <NavItem></NavItem>
               </Nav>

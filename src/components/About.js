@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
-import Me from "../images/me.jpg";
+import { Container, Button } from "reactstrap";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { Element } from "react-scroll";
 import Certificates from "./Slider/Certificates";
 import Black from "../images/blackcat.png";
 import Black2 from "../images/mew2.jpg";
@@ -25,69 +25,21 @@ export default class About extends Component {
       overflowX: "hidden",
     };
     return (
-      <div id="aboutjumpo" style={{ overflowX: "hidden" }}>
-        <Container id="sub" style={{ marginTop: "150px", overflowX: "hidden" }}>
-          <div className="text-center" id="engaya" data-aos="fade-left">
-            Contact
-          </div>
-          <div className="row ">
-            <div className="col-sm-4" data-aos="fade-up">
-              <img className="img-fluid" id="mey" src={Me}></img>
-            </div>
-            <div className="col-sm-8 ml-auto" data-aos="fade-down">
-              <div id="listaya" className="row">
-                <li>
-                  <i className="fas fa-signature" id="adi"></i>
-                  <span>Hassan Fouad</span>
-                </li>
-                <hr></hr>
-              </div>
-              <div id="listaya" className="row">
-                <li>
-                  <i className="fas fa-map-marker-alt" id="adi"></i>
-                  <span>KFS, Egypt</span>
-                </li>
-                <hr></hr>
-              </div>
-              <div id="listaya" className="row">
-                <li>
-                  <i class="fas fa-envelope" id="adi"></i>
-                  <span>
-                    <a href="mailto:mrhassanfouad1@gmail.com">MailMe</a>
-                  </span>
-                </li>
-                <hr></hr>
-              </div>
-              <div id="listaya" className="row">
-                <li>
-                  <i className="fas fa-phone" id="adi"></i>
-                  <span>
-                    <a href="tel:+201202021670">+2 01202021670</a>
-                  </span>
-                </li>
-                <hr></hr>
-              </div>
-            </div>
-          </div>
-          <div className="text-left" id="listaya">
-            <li>
-              <a
-                className="text-center"
-                target="_blank"
-                href="https://drive.google.com/file/d/1OOC1rAigsZRbP7iiJEdRoUpZ6R65yn9Z/view?usp=sharing"
-              >
-                View Full Resume
-              </a>
-            </li>
-          </div>
-        </Container>
+      <div>
         <Container data-aos="fade-up" className="mt-5 mb-5">
-          <div className="text-center mb-5" id="engaya" data-aos="fade-left">
+          <div
+            className="text-center mb-3 mt-5"
+            id="engaya"
+            data-aos="fade-left"
+          >
             Certificates
           </div>
           <Certificates></Certificates>
         </Container>
-        <Container className="mt-5">
+        <div className="mt-5">
+          <span>&nbsp;</span>
+        </div>
+        <Container className="mt-5" id="portfolioDestination">
           <div className="text-center mt-5" id="engaya" data-aos="fade-up">
             Personal Apps
           </div>
@@ -100,14 +52,25 @@ export default class About extends Component {
                 <span>Bekam - Online Shopping / Trading Ecommerce App</span>
               </div>
               <div className="text-left ml-5" id="meow2" data-aos="fade-right">
-                <a target="_blank" href="https://github.com/HassanFouaad/bekam">
-                  <span>Git Repo</span> &nbsp; &nbsp;
-                  <span>
-                    <a target="_blank" href="http://beekam.herokuapp.com/">
-                      Visit
-                    </a>
-                  </span>
-                </a>
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://github.com/HassanFouaad/bekam"
+                    rel="noopener noreferrer"
+                  >
+                    Git Repo
+                  </a>
+                </span>
+                &nbsp; &nbsp;
+                <span>
+                  <a
+                    target="_blank"
+                    href="http://beekam.herokuapp.com/"
+                    rel="noopener noreferrer"
+                  >
+                    Visit
+                  </a>
+                </span>
               </div>
               <div className="text-left ml-5" id="meow3" data-aos="fade-up">
                 <span>
@@ -147,7 +110,13 @@ export default class About extends Component {
                     </li>
                     <li>
                       Check Online Demo
-                      <a href="http://beekam.herokuapp.com/"> here</a>
+                      <a
+                        href="http://beekam.herokuapp.com/"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        here
+                      </a>
                     </li>
                   </ul>
                 </span>
@@ -162,7 +131,7 @@ export default class About extends Component {
               ></img>
             </div>
           </div>
-
+          <hr></hr>
           <div className=" row mt-5">
             <div className="col-sm-4" data-aos="fade-right">
               <img src={Black} alt="Mewoers" className="img-fluid"></img>
@@ -172,17 +141,26 @@ export default class About extends Component {
                 <span>MEOWERS - Social Network App</span>
               </div>
               <div className="text-left ml-5" id="meow2" data-aos="fade-right">
-                <a
-                  target="_blank"
-                  href="https://github.com/HassanFouaad/meowers"
-                >
-                  <span>Git Repo</span> &nbsp; &nbsp;
-                  <span>
-                    <a target="_blank" href="http://meowers.herokuapp.com/">
-                      Visit
-                    </a>
-                  </span>
-                </a>
+                <span></span>
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://github.com/HassanFouaad/meowers"
+                    rel="noopener noreferrer"
+                  >
+                    Git Repo
+                  </a>
+                </span>
+                &nbsp; &nbsp;
+                <span>
+                  <a
+                    target="_blank"
+                    href="http://meowers.herokuapp.com/"
+                    rel="noopener noreferrer"
+                  >
+                    Visit
+                  </a>
+                </span>
               </div>
               <div className="text-left ml-5" id="meow3" data-aos="fade-up">
                 <span>
@@ -211,7 +189,13 @@ export default class About extends Component {
                     </li>
                     <li>
                       Check Online Demo
-                      <a href="http://meowers.herokuapp.com/"> here</a>
+                      <a
+                        href="http://meowers.herokuapp.com/"
+                        rel="noopener noreferrer"
+                      >
+                        {" "}
+                        here
+                      </a>
                     </li>
                   </ul>
                 </span>
@@ -226,7 +210,7 @@ export default class About extends Component {
               ></img>
             </div>
           </div>
-
+          <hr></hr>
           <div className=" row mt-5">
             <div className="col-sm-4" data-aos="fade-right">
               <img src={ita1} alt="Mewoers" className="img-fluid"></img>
@@ -236,12 +220,16 @@ export default class About extends Component {
                 <span>ITALIANO - Restaurant Web App</span>
               </div>
               <div className="text-left ml-5" id="meow2" data-aos="fade-right">
-                <a
-                  target="_blank"
-                  href="https://github.com/HassanFouaad/Restaurant"
-                >
-                  <span>Git Repo</span> &nbsp; &nbsp;
-                </a>
+                <span>
+                  <a
+                    target="_blank"
+                    href="https://github.com/HassanFouaad/Restaurant"
+                    rel="noopener noreferrer"
+                  >
+                    Git Repo
+                  </a>
+                </span>
+                &nbsp; &nbsp;
               </div>
               <div className="text-left ml-5" id="meow3" data-aos="fade-up">
                 <span>

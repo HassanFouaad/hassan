@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  background-color: #f7fafd;
 }
 .bodys {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)),
@@ -12,7 +13,7 @@ html {
 }
 
 .navbar-light .navbar-toggler-icon {
-  color: #d5674e !important;
+  color: #f26d64 !important;
 }
 .row-header {
   margin: 0px auto;
@@ -24,18 +25,16 @@ html {
 }
 #listaya span {
   margin-left: 10px;
+  color: #f7fafd;
   text-decoration: none;
-  box-shadow: 2px 1px 2px #cfcece;
 }
-#sub {
-  box-shadow: 2px 1px 2px #cfcece;
-}
+
 #listaya span:hover {
   color: #d5674e;
 }
 #listaya a {
   text-decoration: none;
-  color: black;
+  color: #f7fafd;
 }
 #listaya a:hover {
   color: #d5674e;
@@ -43,10 +42,9 @@ html {
 
 #adi {
   min-width: 50px;
+  color: #f26d64;
 }
 #frontimage {
-  background: url(./images/front.jpg);
-  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -54,21 +52,18 @@ html {
   color: white;
 }
 #backimage {
-  background-image: url(./images/back.png);
-  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#frontcontent::before {
+#frontcontent {
   position: absolute;
-  content: " ";
+  background: #ebedf0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: rgba(155, 64, 22, 0.22);
 }
 #listaya li {
   font-size: 30px;
@@ -87,18 +82,27 @@ html {
   min-height: 400px;
 }
 .jumbotron {
-  background-image: url(./images/lab.png);
   background-size: cover;
-  min-height: 100vh;
+  padding-bottom: 150px;
 }
-
+#a5erwa7d {
+  margin-top: 167px;
+}
+@media screen and (max-width: 800px) {
+  .jumbotron {
+    height: auto;
+  }
+  #a5erwa7d {
+    margin-top: 0px;
+  }
+}
 .navbar-brand {
-  color: #d5674e !important;
+  color: #f26d64 !important;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 500;
 }
 .nav-link {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
   margin-left: 50px;
   font-family: "Josefin Sans";
@@ -107,7 +111,6 @@ html {
   color: #e08b78 !important;
 }
 #hello {
-  margin-top: 150px;
   font-family: "Josefin Sans";
 }
 
@@ -116,18 +119,18 @@ html {
 }
 
 #what {
-  color: #faefd8 !important ;
+  color: #f26d64 !important ;
   font-weight: 700;
   font-size: 50px;
 }
 #what2 {
   font-weight: 900;
-  color: white;
+  color: #5491b7;
   font-size: 30px;
   font-family: "Josefin Sans";
 }
 #KFS {
-  color: white;
+  color: #5491b7;
   font-size: 30px;
   text-transform: uppercase;
   font-family: "Josefin Sans";
@@ -147,24 +150,24 @@ html {
   font-family: "Shadows Into Light";
 }
 #engaya {
-  color: black;
+  color: #f26d64;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
-  font-family: "Shadows Into Light";
+  font-family: "Josefin Sans";
 }
 #slide {
-
   margin-bottom: 50px;
 }
 #front {
-  color: #d5674e !important ;
+  color: #f26d64 !important ;
   font-size: 50px;
   font-weight: 600;
   font-family: "Josefin Sans";
 }
 #certificate {
-  height: 300px;
+  height: 270px;
+
 }
 #verify {
   margin-top: 220px;
@@ -174,7 +177,7 @@ html {
   text-decoration: none;
 }
 #friends {
-  color: #d5674e;
+  color: #f26d64;
   font-size: 20px;
 
   font-weight: 500;
@@ -189,27 +192,13 @@ html {
   padding: 30px;
 }
 #hehe {
-  font-size: 30px;
+  font-size: 25px;
 }
-
-#touch {
-  background-image: url(./images/unnamed.jpg);
-  position: relative;
-  background-size: cover;
+#buttonaya {
+  background-color: #f26d64;
 }
-#touch::before {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(155, 64, 22, 0.281);
-}
-
 #viewmore {
-  background-color: #d5674e;
+  background-color: #f26d64;
   border-top-right-radius: 30px;
   font-family: "Shadows Into Light";
   font-size: 40px;
@@ -230,15 +219,17 @@ html {
 }
 #meow1 {
   font-size: 30px;
+  color: #5491b7;
 }
 #meow2 a {
-  color: #d5674e;
+  color: #f26d64;
   text-decoration: none;
   font-weight: 600;
   font-family: "Josefin Sans";
 }
 #meow3 li {
   list-style: square;
+  color: black;
 }
 #meow3 p {
   font-family: "Josefin Sans";
@@ -270,7 +261,6 @@ html {
     letter-spacing: 0em;
   }
   #KFS {
-    color: white;
     font-size: 30px;
     text-transform: uppercase;
 
@@ -310,9 +300,63 @@ html {
     text-align: center;
   }
   .nav-link {
-    color: #d5674e !important;
+    color: #f26d64 !important;
     margin-right: 50px;
     background-color: white;
   }
 }
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+
+.section-container {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.section.dark {
+  background: #16151c;
+}
+.section {
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+.header-section {
+  background: #16151c;
+}
+.section-container.header-component {
+  padding: 0;
+}
+.section-container.footer-component {
+  padding: 0;
+}
+.loader:empty {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 3em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid #f26d6463;
+  border-left: 1.1em solid #f26d64;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#butonaya {
+  transition: transform 0.4s;
+}
+#butonaya:hover {
+  transform: scale(1.2);
+}
